@@ -49,10 +49,14 @@ p {
 }
 
 #drugform {
-    width: 100%;
+    width: 80%;
     margin:0 auto;
-    padding: 20px;
+    padding:20px;
     background-color: #AC2832;
     border-radius: 25px;
     border: 2px solid #FFFFFF;    
+}
+
+#submit-button {
+    
 }
