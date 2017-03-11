@@ -1,0 +1,58 @@
+body {
+    padding-top: 70px;
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    font-family: helvetica;
+    background-color: #DFD297;
+    text-align:center;
+}
+
+h1 {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+h2 {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+h3 {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 40px;
+}
+
+h4  {
+    font-family: 'Allerta', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+}
+ 
+p {
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.drugresult {
+    width: 100%;
+    margin: 30px 0px;
+    padding: 20px;
+    background-color: #AC2832;
+    border-radius: 25px;
+    border: 2px solid #FFFFFF;
+
+}
+
+#drugform {
+    width: 100%;
+    margin:0 auto;
+    padding: 20px;
+    background-color: #AC2832;
+    border-radius: 25px;
+    border: 2px solid #FFFFFF;    
+}

@@ -1,14 +1,38 @@
-<!doctype html>
-<title>Hello from Flask</title>
-<h1> Welcome to DrugInfo.py!<h1>
+<!DOCTYPE html>
+<html lang="en">
 
-<div id="drug form">
-    <h1>Please choose a country and a drug</h1>
-    <form method="post" action="/druginfo">
-        <label for="country">Country: </label>
-        <input type="text" id="country" name="country" value="" placeholder="Choose a country" required="required" autofocus="autofocus" />
-        <label for="drug">Drug: </label>
-        <input type="text" id="drug" name="drug" value="" placeholder="Please choose a drug" required="required" />
-        <input type="submit" value="Submit" id="submit-button" />
-    </form>
-</div>
+<head>
+	<title>Hello from Flask</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel='stylesheet' type='text/css' href='../static/style.css'>
+	<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<h1> Welcome to DrugInfo.py!</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id=drugform>
+		<br>
+		<br>
+	    <h4>Please choose a country and a drug</h4>
+	    <br>
+	    <form method="post" action="/druginfo">
+	        <label for="country">Country: </label>
+	        <input type="text" id="country" name="country" value="" placeholder="Choose a country" required="required" autofocus="autofocus" />
+	        <label for="drug">Drug: </label>
+	        <input type="text" id="drug" name="drug" value="" placeholder="Please choose a drug" required="required" />
+	        <input type="submit" value="Submit" id="submit-button" />
+	    </form>
+	    <br>
+	    <br>
+	</div>
+
+</body>
+
+</html>
