@@ -75,8 +75,28 @@ def druginfo():
 			return render_template("uk_crystalmeth.html")
 		else: 
 			return render_template("druginfo.html")
+		
+@app.route("/signup", methods=['POST'])
+def sign_up():
+	form_data = request.form
+	user_email = form_data['email']
+	user_name = form_data['name']
+	print user_email
+	print user_name
+	return send_mail(user_email)
+	return render_template("signup.html")
 
-
+def send_mail(user_email):
+	return requests.post(
+        "https://api.mailgun.net/v3/sandboxc9d6ccf1f24348da82121bf2619be93b.mailgun.org/messages",
+        auth=("api", "key-745c0f78cbc344c4f338f51e0ddaa375"),
+        data={"from": "DrugInfo.py <mailgun@sandboxc9d6ccf1f24348da82121bf2619be93b.mailgun.org>",
+              "to": user_email,
+              "subject": "Hello from Drug.py",
+              "html": "<p>Thank you for registering to our newsletter. We will send you more information shortly.</p>",
+              })
+	return "Message sent"
+		
 
 
 app.run()
