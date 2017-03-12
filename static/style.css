@@ -48,6 +48,13 @@ p {
 
 }
 
+form {
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 20px;
+}
+
 #drugform {
     width: 80%;
     margin:0 auto;
@@ -57,6 +64,83 @@ p {
     border: 2px solid #FFFFFF;    
 }
 
+
 #submit-button {
+    text-align: center;
+    color: #DFD297;
     
+    padding: 10px 0;
+    margin: 10px 0;
+    width: 180px;
+    height:60px;
+
+    background: #AC2832;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #000000;
+    overflow: hidden;
+
+    font-family: 'Crimson Text', Georgia, Times, serif;
+    font-size: 20px;
+    line-height: 25px;
+  
+  transition: all 0.5s;
+}
+
+#submit-button:hover, #submit-button:active {
+  text-decoration: none;
+  color: #AC2832;
+  border-color: #000000;
+  background: #DFD297;
+}
+
+#submit-button span 
+{
+  display: inline-block;
+  position: relative;
+  padding-right: 0;
+  
+  transition: padding-right 0.5s;
+}
+
+#submit-button span:after 
+{
+  content: ' ';  
+  position: absolute;
+  top: 0;
+  right: -18px;
+  opacity: 0;
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid #FFF;
+  border-top: none;
+  border-right: none;
+
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  transform: rotate(-45deg);
+}
+
+#submit-button:hover span, #submit-button:active span 
+{
+  padding-right: 30px;
+}
+
+#submit-button:hover span:after, #submit-button:active span:after 
+{
+  transition: opacity 0.5s, top 0.5s, right 0.5s;
+  opacity: 1;
+  border-color: #0C5;
+  right: 0;
+  top: 50%;
+}
+
+#country {
+
+}
+
+#drug {
+
 }
