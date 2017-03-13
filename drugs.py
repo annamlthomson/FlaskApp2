@@ -75,7 +75,7 @@ def druginfo():
 			return render_template("uk_crystalmeth.html")
 		else: 
 			return render_template("druginfo.html")
-		
+
 @app.route("/signup", methods=['POST'])
 def sign_up():
 	form_data = request.form
@@ -83,8 +83,9 @@ def sign_up():
 	user_name = form_data['name']
 	print user_email
 	print user_name
-	return send_mail(user_email)
 	return render_template("signup.html")
+	return send_mail(user_email)
+
 
 def send_mail(user_email):
 	return requests.post(
@@ -95,8 +96,9 @@ def send_mail(user_email):
               "subject": "Hello from Drug.py",
               "html": "<p>Thank you for registering to our newsletter. We will send you more information shortly.</p>",
               })
-	return "Message sent"
-		
+	return render_template("signup.html")
+
+
 
 
 app.run()
